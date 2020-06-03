@@ -675,7 +675,8 @@ html[lang=en-US] .pack {
 }
 @media (max-width: 992px) {
   .pack {
-    margin-bottom: 0;
+    margin: auto;
+    width: 262px;
   }
 }
 .pack .pack-info {
@@ -784,6 +785,11 @@ html[lang=en-US] .pack .desc-item {
 }
 .pack:hover {
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 992px) {
+  .pack:hover {
+    box-shadow: none;
+  }
 }
 
 .clients-cont {
@@ -1272,7 +1278,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1285,7 +1291,7 @@ footer {
 @media (max-width: 1199px) {
   .social {
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-top: 0;
   }
 }
@@ -1322,7 +1328,7 @@ footer {
 @media (max-width: 1199px) {
   .nav-foot {
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -1345,7 +1351,7 @@ html[lang=en-US] .foot-li {
   }
   html[lang=en-US] .foot-li {
     margin-right: 0;
-    margin: 4px 0;
+    margin: 5px 0;
   }
 }
 .foot-li:last-of-type {
