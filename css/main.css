@@ -162,6 +162,7 @@ html[lang=en-US] .nav-li:last-of-type {
   font-size: 16px;
   color: #333333;
   font-family: med;
+  text-transform: capitalize;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -503,6 +504,10 @@ html[lang=en-US] .nav-li:last-of-type {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+html[lang=en-US] .service .service-name {
+  max-width: none;
+  width: auto;
+}
 .service:hover .service-img {
   transform: translateY(-5px);
 }
@@ -525,6 +530,7 @@ html[lang=en-US] .nav-li:last-of-type {
   text-align: center;
   margin-bottom: 43px;
   position: relative;
+  text-transform: uppercase;
 }
 @media (max-width: 1199px) {
   .sec-head {
@@ -664,10 +670,16 @@ html[lang=en-US] .nav-li:last-of-type {
   transition: all 0.3s ease-in-out;
   margin-bottom: 15px;
 }
+html[lang=en-US] .pack {
+  height: 650px;
+}
 @media (max-width: 992px) {
   .pack {
     margin-bottom: 0;
   }
+}
+.pack .pack-info {
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .pack .pack-info {
@@ -682,6 +694,10 @@ html[lang=en-US] .nav-li:last-of-type {
 .pack .pack-name {
   font-size: 19px;
   color: #333333;
+  text-transform: uppercase;
+}
+html[lang=en-US] .pack .pack-name {
+  height: 40px;
 }
 .pack .pack-desc {
   padding: 0 3px;
@@ -711,6 +727,9 @@ html[lang=en-US] .nav-li:last-of-type {
   color: #808080;
   font-size: 16px;
   line-height: 1.625;
+}
+html[lang=en-US] .pack .desc-text {
+  font-size: 15px;
 }
 .pack .desc-text.desc-hint {
   color: #f00;
@@ -752,6 +771,9 @@ html[lang=en-US] .nav-li:last-of-type {
   font-size: 16px;
   color: #808080;
   margin-bottom: 3px;
+}
+html[lang=en-US] .pack .desc-item {
+  font-size: 15px;
 }
 .pack .desc-item:last-of-type {
   margin-bottom: 0;
@@ -805,10 +827,17 @@ html[lang=en-US] .nav-li:last-of-type {
   margin-bottom: 15px;
   margin-left: 15px;
 }
+html[lang=en-US] .client {
+  margin-left: 0;
+  margin-right: 15px;
+}
 @media (max-width: 992px) {
   .client {
     margin: 0;
     width: 100%;
+  }
+  html[lang=en-US] .client {
+    margin: 0;
   }
 }
 .client img {
@@ -823,6 +852,9 @@ html[lang=en-US] .nav-li:last-of-type {
 .client:nth-of-type(5n) {
   margin-left: 0;
 }
+html[lang=en-US] .client:nth-of-type(5n) {
+  margin-right: 0;
+}
 
 /*//////////////////////////////preloader//////////////////////////////*/
 .pre-loader {
@@ -831,7 +863,7 @@ html[lang=en-US] .nav-li:last-of-type {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9999999;
   background-color: #f7f7f7;
   display: flex;
   justify-content: center;
@@ -1302,20 +1334,32 @@ footer {
 .foot-li {
   margin-left: 22px;
 }
+html[lang=en-US] .foot-li {
+  margin-left: 0;
+  margin-right: 22px;
+}
 @media (max-width: 1199px) {
   .foot-li {
     margin-left: 0;
+    margin: 4px 0;
+  }
+  html[lang=en-US] .foot-li {
+    margin-right: 0;
     margin: 4px 0;
   }
 }
 .foot-li:last-of-type {
   margin-left: 0;
 }
+html[lang=en-US] .foot-li:last-of-type {
+  margin-right: 0;
+}
 
 .foot-a {
   font-size: 16px;
   font-family: med;
   color: #fff;
+  text-transform: capitalize;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
