@@ -528,6 +528,38 @@ html[lang=en-US] .service .service-name {
   transform: none;
 }
 
+.serv-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 1199px) {
+  .serv-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .serv-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .serv-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.serv-grid .service {
+  margin-top: 45px;
+}
+@media (max-width: 767px) {
+  .serv-grid .service {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+.serv-grid .service .service-name {
+  height: 50px;
+}
+
 .sec-head {
   font-family: bold;
   font-size: 30px;
