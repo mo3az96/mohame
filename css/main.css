@@ -879,6 +879,12 @@ html[lang=en-US] .client:nth-of-type(5n) {
   width: 100%;
   margin-top: 15px;
 }
+@media (max-width: 767px) {
+  .page-cont .client {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
 
 /*//////////////////////////////preloader//////////////////////////////*/
 .pre-loader {
@@ -1108,6 +1114,9 @@ html[lang=en-US] .breadcrumb-cont {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 30px;
 }
+html[lang=en-US] .breadcrumb-cont img {
+  transform: scaleX(-1);
+}
 @media (max-width: 767px) {
   .breadcrumb-cont {
     margin-top: 0;
@@ -1117,9 +1126,6 @@ html[lang=en-US] .breadcrumb-cont {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-  html[lang=en-US] .breadcrumb-cont img {
-    transform: scaleX(-1);
   }
 }
 
@@ -1361,10 +1367,10 @@ html[lang=en-US] .breadcrumb-cont {
 }
 
 .page-cont {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .page-cont .blog {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 @media (max-width: 767px) {
   .page-cont .blog {
@@ -1380,6 +1386,69 @@ html[lang=en-US] .breadcrumb-cont {
 }
 .page-cont .blog .blog-name:hover {
   color: #a87d2c;
+}
+.page-cont .culture-img {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .page-cont .culture-img {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.gallery-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .gallery-img {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+.gallery-img::before {
+  padding-bottom: 100%;
+  content: "";
+}
+.gallery-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-img:after {
+  position: absolute;
+  top: -100px;
+  bottom: -100px;
+  right: -100px;
+  left: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(168, 125, 44, 0.8);
+  font-size: 30px;
+  color: #fff;
+  content: "";
+  font-family: "Linearicons-Free";
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotate(360deg);
+}
+.gallery-img:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(0);
 }
 
 .mo-pagination {
