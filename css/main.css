@@ -146,7 +146,8 @@ html[lang=en-US] .mo-navbar > li {
 }
 @media (max-width: 1199px) {
   html[lang=en-US] .mo-navbar > li {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .mo-navbar > li:last-of-type {
@@ -161,6 +162,12 @@ html[lang=en-US] .mo-navbar > li:last-of-type {
   color: #333333;
   font-family: med;
   text-transform: capitalize;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  text-decoration: none;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -814,10 +821,18 @@ html[lang=en-US] .pack .desc-item {
   align-items: center;
   flex-wrap: wrap;
 }
+html[lang=en-US] .clients-sec {
+  padding-right: 0;
+  padding-left: 60px;
+}
 @media (max-width: 992px) {
   .clients-sec {
     padding-right: 0;
     display: unset;
+  }
+  html[lang=en-US] .clients-sec {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -1310,12 +1325,20 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+html[lang=en-US] .social-link {
+  margin-left: 0;
+  margin-right: 7px;
+}
 .social-link:hover, .social-link:focus {
   background-color: #a87d2c;
   color: #fff;
 }
 .social-link:last-of-type {
   margin-left: 0;
+}
+html[lang=en-US] .social-link:last-of-type {
+  margin-left: 0;
+  margin-right: 7px;
 }
 
 .nav-foot {
@@ -1362,6 +1385,12 @@ html[lang=en-US] .nav-foot > li:last-of-type {
   font-family: med;
   color: #fff;
   text-transform: capitalize;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  text-decoration: none;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1516,10 +1545,10 @@ html[lang=en-US] .close-btn {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .sec-nav .nav-li {
+  .sec-nav .mo-navbar > li {
     margin: 4px 0;
   }
-  .sec-nav .nav-anchor.active::after {
+  .sec-nav .mo-navbar > li > a.active::after {
     display: none;
   }
   .sec-nav .lang {
