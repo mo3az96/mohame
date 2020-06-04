@@ -1167,6 +1167,11 @@ html[lang=en-US] .breadcrumb-cont img {
   .breadcrumb-cont {
     margin-top: 0;
     height: 100px;
+    border-bottom-right-radius: 20px;
+  }
+  html[lang=en-US] .breadcrumb-cont {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
   }
   .breadcrumb-cont img {
     height: 100%;
