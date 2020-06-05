@@ -2197,6 +2197,7 @@ html[lang=en-US] .mo-nav-tabs > li > a span {
     text-align: center;
     display: flex;
     margin-bottom: 5px;
+    justify-content: center;
   }
 }
 .order-form .next-cont {
@@ -2350,7 +2351,7 @@ html[lang=en-US] .radios .custom-radio span {
 }
 @media (max-width: 992px) {
   .totals .total .total-title {
-    width: 50%;
+    width: 70%;
   }
 }
 .totals .total .total-price {
@@ -2361,7 +2362,7 @@ html[lang=en-US] .radios .custom-radio span {
 }
 @media (max-width: 992px) {
   .totals .total .total-price {
-    width: 50%;
+    width: 30%;
   }
 }
 
