@@ -5,6 +5,11 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
+    if ($(window).width() > 992) {
+        $('select.selectpicker').selectpicker({
+            dropupAuto: false
+        });
+    }
     new WOW().init();
     $(window).scroll(function () {
         $(this).scrollTop() >= 500 ? $(".arro_top").fadeIn(500) : $(".arro_top").fadeOut(500);
@@ -183,5 +188,14 @@ $(document).ready(function () {
             $(".top-nav").removeClass("nav-in");
             $("body").removeClass("overflow");
         });
+
+
+        $(".form-select").removeClass("selectpicker");
+        $(".form-select").addClass("mobile-select");
+        $(".form-select").wrap('<div class="mobile-select-cont"></div>');
     }
+    $(".order-form a.submit").click(function () {
+        $(".mo-nav-tabs a[href='#step1']").parent('li').removeClass("active");
+        $(".mo-nav-tabs a[href='#step2']").parent('li').addClass("active");
+    })
 });
