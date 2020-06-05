@@ -2369,6 +2369,48 @@ html[lang=en-US] .radios .custom-radio span {
   padding: 0 15px;
 }
 
+.success {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+@media (max-width: 992px) {
+  .success {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+.success .icon {
+  font-size: 72px;
+  color: #00b046;
+}
+.success .success-head {
+  font-size: 26px;
+  color: #333333;
+  font-family: bold;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+@media (max-width: 992px) {
+  .success .success-head {
+    font-size: 24px;
+  }
+}
+.success .success-subhead {
+  font-size: 22px;
+  color: #333333;
+}
+@media (max-width: 992px) {
+  .success .success-subhead {
+    font-size: 20px;
+  }
+}
+
 .mo-pagination {
   display: flex;
   align-items: center;
